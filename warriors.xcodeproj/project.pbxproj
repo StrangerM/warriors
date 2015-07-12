@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		84E8F56F1B504147001CEE5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E8F56E1B504147001CEE5F /* main.m */; };
+		84E8F57B1B504428001CEE5F /* Abstract.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E8F57A1B504428001CEE5F /* Abstract.m */; };
+		84E8F5811B5045A0001CEE5F /* Rogue.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E8F5801B5045A0001CEE5F /* Rogue.m */; };
+		84E8F5841B504646001CEE5F /* Knight.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E8F5831B504646001CEE5F /* Knight.m */; };
+		84E8F5871B504664001CEE5F /* Warrior.m in Sources */ = {isa = PBXBuildFile; fileRef = 84E8F5861B504664001CEE5F /* Warrior.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +29,14 @@
 /* Begin PBXFileReference section */
 		84E8F56B1B504147001CEE5F /* warriors */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = warriors; sourceTree = BUILT_PRODUCTS_DIR; };
 		84E8F56E1B504147001CEE5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84E8F5791B504428001CEE5F /* Abstract.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Abstract.h; sourceTree = "<group>"; };
+		84E8F57A1B504428001CEE5F /* Abstract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Abstract.m; sourceTree = "<group>"; };
+		84E8F57F1B5045A0001CEE5F /* Rogue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rogue.h; sourceTree = "<group>"; };
+		84E8F5801B5045A0001CEE5F /* Rogue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rogue.m; sourceTree = "<group>"; };
+		84E8F5821B504646001CEE5F /* Knight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Knight.h; sourceTree = "<group>"; };
+		84E8F5831B504646001CEE5F /* Knight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Knight.m; sourceTree = "<group>"; };
+		84E8F5851B504664001CEE5F /* Warrior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Warrior.h; sourceTree = "<group>"; };
+		84E8F5861B504664001CEE5F /* Warrior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Warrior.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +69,49 @@
 		84E8F56D1B504147001CEE5F /* warriors */ = {
 			isa = PBXGroup;
 			children = (
+				84E8F57C1B504564001CEE5F /* Knight */,
+				84E8F57D1B504564001CEE5F /* Rogue */,
+				84E8F57E1B504564001CEE5F /* Warrior */,
+				84E8F5781B504428001CEE5F /* Abstract */,
 				84E8F56E1B504147001CEE5F /* main.m */,
 			);
 			path = warriors;
+			sourceTree = "<group>";
+		};
+		84E8F5781B504428001CEE5F /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				84E8F5791B504428001CEE5F /* Abstract.h */,
+				84E8F57A1B504428001CEE5F /* Abstract.m */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		84E8F57C1B504564001CEE5F /* Knight */ = {
+			isa = PBXGroup;
+			children = (
+				84E8F5821B504646001CEE5F /* Knight.h */,
+				84E8F5831B504646001CEE5F /* Knight.m */,
+			);
+			path = Knight;
+			sourceTree = "<group>";
+		};
+		84E8F57D1B504564001CEE5F /* Rogue */ = {
+			isa = PBXGroup;
+			children = (
+				84E8F57F1B5045A0001CEE5F /* Rogue.h */,
+				84E8F5801B5045A0001CEE5F /* Rogue.m */,
+			);
+			path = Rogue;
+			sourceTree = "<group>";
+		};
+		84E8F57E1B504564001CEE5F /* Warrior */ = {
+			isa = PBXGroup;
+			children = (
+				84E8F5851B504664001CEE5F /* Warrior.h */,
+				84E8F5861B504664001CEE5F /* Warrior.m */,
+			);
+			path = Warrior;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E8F5841B504646001CEE5F /* Knight.m in Sources */,
+				84E8F5811B5045A0001CEE5F /* Rogue.m in Sources */,
+				84E8F5871B504664001CEE5F /* Warrior.m in Sources */,
 				84E8F56F1B504147001CEE5F /* main.m in Sources */,
+				84E8F57B1B504428001CEE5F /* Abstract.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

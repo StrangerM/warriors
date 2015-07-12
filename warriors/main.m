@@ -7,11 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Knight.h"
+#import "Rogue.h"
+#import "Warrior.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         NSLog(@"Hello, World!");
+        Warrior *warLord = [[Warrior alloc] init];
+        Rogue *theif = [[Rogue alloc] init];
+        Knight *paladin = [[Knight alloc] init];
+        
     }
     return 0;
 }
+
+
