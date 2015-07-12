@@ -14,9 +14,9 @@
 {
     self = [super init];
     if (self) {
-        self.strength = 80.0;
+        self.strength = 90.0;
         self.dexterity = 150;///ловкость
-        self.stamina = 50;///выносливость
+        self.stamina = 60;///выносливость
         [self calculateAndSetParameters];
     }
     return self;

@@ -48,12 +48,16 @@ static CGFloat const basicEvasion = 0.25f;
     }
     
     //implement HP delta calculation
-    CGFloat HP_DELTA;
-    HP_DELTA = self.maxHP - tempDamage + 0.2 * self.defence;
-    self.currentHP -= HP_DELTA;
+//    CGFloat HP_DELTA;
+//    HP_DELTA = self.maxHP - tempDamage + 0.2 * self.defence;
+//    self.currentHP -= HP_DELTA;
+//    
+    if (player.currentHP < tempDamage + 0.2 * player.defence){
+        player.currentHP = 0;
+        return;
+    }
     
-    
-    //player.currentHP -= HP delta;
+    player.currentHP = player.currentHP - tempDamage + 0.2 * player.defence;
 }
 - (BOOL)eventOcurredWithRate:(CGFloat)rate
 {
@@ -69,10 +73,8 @@ static CGFloat const basicEvasion = 0.25f;
     
     NSInteger index; // = from random
     // index = arc4random_uniform(1);
-    index = arc4random() % 1;
-    //NSLog(@"Random number: %ld", (long)index);
-   // NSLog(@"%li", index);
-    if ([critArray[index] boolValue]) {
+    index = arc4random() % 100;
+        if ([critArray[index] boolValue]) {
         return YES;
     }
     return NO;

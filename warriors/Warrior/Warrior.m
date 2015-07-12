@@ -14,11 +14,10 @@
 {
     self = [super init];
     if (self) {
-        self.strength = 150.0;
+        self.strength = 120.0;
         self.dexterity = 50;///ловкость
         self.stamina = 75;///выносливость
         [self calculateAndSetParameters];
-        // [self phisycalAttackOn:(Abstract *)paladin]; видаэ помилку???&
     }
     return self;
 }
