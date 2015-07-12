@@ -48,7 +48,7 @@ static CGFloat const basicEvasion = 0.25f;
     }
     
     //implement HP delta calculation
-    CGFloat HP_DELTA = self.maxHP;
+    CGFloat HP_DELTA;
     HP_DELTA = self.maxHP - tempDamage + 0.2 * self.defence;
     self.currentHP -= HP_DELTA;
     
