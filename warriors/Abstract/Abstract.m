@@ -70,7 +70,7 @@ static CGFloat const basicEvasion = 0.25f;
     NSInteger index; // = from random
     // index = arc4random_uniform(1);
     index = arc4random() % 1;
-    printf("Random number: %ld", (long)index);
+    //NSLog(@"Random number: %ld", (long)index);
    // NSLog(@"%li", index);
     if ([critArray[index] boolValue]) {
         return YES;

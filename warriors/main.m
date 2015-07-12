@@ -10,6 +10,7 @@
 #import "Knight.h"
 #import "Rogue.h"
 #import "Warrior.h"
+#import "Abstract.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
@@ -17,7 +18,9 @@ int main(int argc, const char * argv[]) {
         Warrior *warLord = [[Warrior alloc] init];
         Rogue *theif = [[Rogue alloc] init];
         Knight *paladin = [[Knight alloc] init];
+       
         
+       
     }
     return 0;
 }

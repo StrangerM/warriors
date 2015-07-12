@@ -18,6 +18,7 @@
         self.dexterity = 50;///ловкость
         self.stamina = 75;///выносливость
         [self calculateAndSetParameters];
+         [self phisycalAttackOn:(Abstract *)paladin];
     }
     return self;
 }
